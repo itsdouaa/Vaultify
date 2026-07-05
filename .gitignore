@@ -2,7 +2,7 @@
 target/
 
 # Workspace
-.cargo.lock
+.Cargo.lock
 
 # VS Code
 .vscode/
