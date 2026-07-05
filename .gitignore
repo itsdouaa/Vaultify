@@ -1,0 +1,15 @@
+# Rust
+target/
+
+# VS Code
+.vscode/
+
+# JetBrains
+.idea/
+
+# macOS
+.DS_Store
+
+# Backup files
+*.bak
+*.tmp
