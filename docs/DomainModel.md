@@ -43,7 +43,7 @@ Unless explicitly stated otherwise, every entity:
 
 - has a unique identifier;
 - has a single responsibility;
-- belongs to exactly one Vault;
+- belongs directly or transitively to exactly one Vault
 - may contain Metadata;
 - can be serialized independently from storage format;
 - is independent from cryptography and UI.
@@ -618,6 +618,7 @@ Folder "1" --- "0..*" Folder    (children)
 
 ## Metadata Ownership (generic)
 
+User "1" --- "1" Metadata
 Vault "1" --- "1" Metadata
 Entry "1" --- "1" Metadata
 Identity "1" --- "1" Metadata
@@ -626,7 +627,7 @@ Tag "1" --- "1" Metadata
 
 ## Relationship Terminology
 
-- owns: expresses lifecycle ownership.
+- owns: expresses simple ownership.
 - contains: expresses structural containment.
 - references: expresses a non-owning association.
 
@@ -697,8 +698,11 @@ Folder "1" --> "0..*" Folder : children
 %% Generic Metadata Ownership
 %%========================
 
+User "1" *-- "1" Metadata
 Vault "1" *-- "1" Metadata
 Folder "1" *-- "1" Metadata
+Entry "1" *--- "1" Metadata
+Identity "1" *--- "1" Metadata
 Tag "1" *-- "1" Metadata
 ```
 
