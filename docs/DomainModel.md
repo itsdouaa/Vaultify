@@ -579,53 +579,53 @@ cryptographic implementation.
 
 ## Ownership Hierarchy
 
-User "1" --- "0..*" Vault
-Vault "1" --- "0..*" Entry
-Vault "1" --- "0..*" Folder
-Vault "1" --- "0..*" Tag
-Vault "1" --- "0..*" Identity
+- User "1" --- "0..*" Vault
+- Vault "1" --- "0..*" Entry
+- Vault "1" --- "0..*" Folder
+- Vault "1" --- "0..*" Tag
+- Vault "1" --- "0..*" Identity
 
 ## Entry Composition
 
-Entry "1" --- "1..*" Field
-Entry "1" --- "0..*" Attachment
-Entry "1" --- "0..*" History
-Entry "1" --- "1" Metadata
+- Entry "1" --- "1..*" Field
+- Entry "1" --- "0..*" Attachment
+- Entry "1" --- "0..*" History
+- Entry "1" --- "1" Metadata
 
 ## Entry ↔ Tag
 
-Entry "0..*" --- "0..*" Tag : tagged with
+- Entry "0..*" --- "0..*" Tag : tagged with
 
 ## Entry ↔ Folder
 
-Folder "0..1" --- "0..*" Entry : contains
+- Folder "0..1" --- "0..*" Entry : contains
 
 ## Entry ↔ Identity
 
-Entry "0..*" --- "0..1" Identity : references
+- Entry "0..*" --- "0..1" Identity : references
 
 ## History ↔ Attachment
 
-History "1" --- "0..*" Attachment : contains
+- History "1" --- "0..*" Attachment : contains
 
 ## Identity Composition
 
-Identity "1" --- "1..*" Field
-Identity "1" --- "1" Metadata
+- Identity "1" --- "1..*" Field
+- Identity "1" --- "1" Metadata
 
 ## Folder Structure
 
-Folder "0..1" --- "1" Folder    (parent)
-Folder "1" --- "0..*" Folder    (children)
+- Folder "0..1" --- "1" Folder    (parent)
+- Folder "1" --- "0..*" Folder    (children)
 
 ## Metadata Ownership (generic)
 
-User "1" --- "1" Metadata
-Vault "1" --- "1" Metadata
-Entry "1" --- "1" Metadata
-Identity "1" --- "1" Metadata
-Folder "1" --- "1" Metadata
-Tag "1" --- "1" Metadata
+- User "1" --- "1" Metadata
+- Vault "1" --- "1" Metadata
+- Entry "1" --- "1" Metadata
+- Identity "1" --- "1" Metadata
+- Folder "1" --- "1" Metadata
+- Tag "1" --- "1" Metadata
 
 ## Relationship Terminology
 
