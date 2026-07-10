@@ -627,9 +627,9 @@ Tag "1" --- "1" Metadata
 
 ## Relationship Terminology
 
-- owns: expresses simple ownership.
-- contains: expresses structural containment.
-- references: expresses a non-owning association.
+- **owns**: expresses simple ownership.
+- **contains**: expresses structural containment or composition.
+- **references**: expresses a non-owning association.
 
 ```mermaid
 classDiagram
