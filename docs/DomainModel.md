@@ -1,5 +1,7 @@
 # Domain Model
 
+**Status:** Stable (v1.0)
+
 ## Purpose
 
 This document defines the core business concepts of Vaultify.
@@ -627,8 +629,8 @@ Tag "1" --- "1" Metadata
 
 ## Relationship Terminology
 
-- **owns**: expresses simple ownership.
-- **contains**: expresses structural containment or composition.
+- **owns**: expresses ownership between independent entities.
+- **contains**: expresses composition, where the contained object cannot exist independently of its owner.
 - **references**: expresses a non-owning association.
 
 ```mermaid
