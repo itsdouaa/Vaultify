@@ -6,7 +6,7 @@ This document defines the core business concepts of Vaultify.
 
 The domain model is independent from:
 
-- Rust implementation
+- Programmation language implementation
 - Storage format
 - Cryptography
 - User interface
