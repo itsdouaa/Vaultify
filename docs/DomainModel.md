@@ -701,8 +701,8 @@ Folder "1" --> "0..*" Folder : children
 User "1" *-- "1" Metadata
 Vault "1" *-- "1" Metadata
 Folder "1" *-- "1" Metadata
-Entry "1" *--- "1" Metadata
-Identity "1" *--- "1" Metadata
+Entry "1" *-- "1" Metadata
+Identity "1" *-- "1" Metadata
 Tag "1" *-- "1" Metadata
 ```
 
