@@ -181,4 +181,4 @@ consistent model.
 
 ## References
 
-- docs/DomainModel.md
+- https://github.com/itsdouaa/Vaultify/blob/main/docs/DomainModel.md#domain-model
